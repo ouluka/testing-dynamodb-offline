@@ -1,0 +1,40 @@
+{
+  "name": "serverless-node-api",
+  "version": "1.0.0",
+  "description": "serverless api",
+  "author": "ouluka",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "sls offline start",
+    "dev": "ts-node-dev --inspect --ignore-watch node_modules --respawn src/index.ts",
+    "cs:check": "prettier --check .",
+    "cs:format": "prettier --write \"src/**/*.ts\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/aws-sdk": "0.0.42",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.7",
+    "@types/supertest": "^2.0.11",
+    "@types/uuid": "^8.3.1",
+    "aws-sdk": "^2.12.0",
+    "jest": "^27.0.6",
+    "prettier": "2.3.2",
+    "serverless": "^2.53.1",
+    "serverless-dynamodb-local": "^0.2.18",
+    "serverless-offline": "^6.8.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "supertest": "^6.1.4",
+    "ts-node-dev": "^1.1.8",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}

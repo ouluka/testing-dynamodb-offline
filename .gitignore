@@ -1,0 +1,7 @@
+node_modules
+.build
+.dynamodb
+.serverless
+.vscode
+
+yarn.lock
