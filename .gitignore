@@ -1,7 +1,4 @@
 node_modules
-.build
-.dynamodb
-.serverless
-.vscode
 
+.env
 yarn.lock
